@@ -163,18 +163,6 @@ letterText.innerHTML="";
 
 let letterIndex=0;
 
-function typeLetter(){
-
-    if(letterIndex < originalLetter.length){
-
-        letterText.innerHTML += originalLetter.charAt(letterIndex);
-
-        letterIndex++;
-
-        setTimeout(typeLetter,28);
-
-    }
-
 }
 const particles=[];
 
