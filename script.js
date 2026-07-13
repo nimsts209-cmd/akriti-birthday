@@ -246,33 +246,22 @@ function animateParticles(){
 }
 
 animateParticles();
-let letterOpened = false;
+let letterOpened = true; 
 
-envelope.addEventListener("click", () => {
+if (envelope) {
 
-    envelope.classList.toggle("open");
+    envelope.addEventListener("click", () => {
 
-    if(!letterOpened){
+        envelope.classList.toggle("open");
 
-        letterOpened = true;
+        launchFireworks();
+        createConfetti();
+        heartBurst();
+        createPetals();
 
-        setTimeout(() => {
+    });
 
-            typeLetter();
-
-        },700);
-
-    }
-
-    launchFireworks();
-
-    createConfetti();
-
-    heartBurst();
-
-    createPetals();
-
-});
+}
 function heartBurst(){
 
     for(let i=0;i<40;i++){
