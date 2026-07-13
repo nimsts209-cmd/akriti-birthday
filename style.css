@@ -259,6 +259,8 @@ backdrop-filter:blur(15px);
 border:1px solid rgba(255,255,255,.35);
 }
 .gallery{
+    padding:90px 20px;
+    text-align:center;
     display: flex;
     flex-direction: row;
     justify-content: center;
