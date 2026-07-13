@@ -501,10 +501,7 @@ function animateFireworks(){
 animateFireworks();
 setInterval(()=>{
 
-    if(letterOpened){
-
-        launchFireworks();
-
+launchFireworks();
     }
 
 },7000);
