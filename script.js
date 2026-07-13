@@ -227,22 +227,7 @@ function animateParticles(){
 }
 
 animateParticles();
-let letterOpened = true; 
 
-if (envelope) {
-
-    envelope.addEventListener("click", () => {
-
-        envelope.classList.toggle("open");
-
-        launchFireworks();
-        createConfetti();
-        heartBurst();
-        createPetals();
-
-    });
-
-}
 function heartBurst(){
 
     for(let i=0;i<40;i++){
