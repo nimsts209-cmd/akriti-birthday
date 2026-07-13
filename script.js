@@ -502,7 +502,6 @@ animateFireworks();
 setInterval(()=>{
 
 launchFireworks();
-    }
 
 },7000);
 let cakeClicks = 0;
