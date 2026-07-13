@@ -6,8 +6,6 @@ const startButton = document.getElementById("startButton");
 
 const music = document.getElementById("music");
 
-const envelope = document.getElementById("envelope");
-
 const cake = document.getElementById("cake");
 
 const particlesCanvas = document.getElementById("particles");
