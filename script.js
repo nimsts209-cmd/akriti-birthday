@@ -72,11 +72,7 @@ text:"You've always been there whenever I needed someone. Your kindness means mo
 {
 title:"Amazing Memories 📸",
 text:"Every laugh, every conversation, and every memory we've made together is something I'll always treasure."
-},
 
-{
-title:"Your Smile 🌸",
-text:"Your smile has a way of making even ordinary days feel brighter."
 },
 
 {
@@ -91,7 +87,7 @@ text:"Simply being yourself is enough to make the people around you happier."
 
 {
 title:"Thank You 🌷",
-text:"Thank you for being such an amazing friend. Happy Birthday, Akriti!"
+text:"Thank you for being such an amazing friend. Happy Birthday, dinooooo!"
 }
 
 ];
