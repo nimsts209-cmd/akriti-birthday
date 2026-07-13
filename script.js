@@ -26,7 +26,6 @@ const reasonText = document.getElementById("reasonText");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
-const letterText = document.getElementById("letterText");
 function resizeCanvas(){
 
     particlesCanvas.width = window.innerWidth;
@@ -154,8 +153,6 @@ lightbox.addEventListener("click",(e)=>{
         lightbox.style.display="none";
     }
 });
-
-letterText.innerHTML="";
 
 let letterIndex=0;
 const particles=[];
