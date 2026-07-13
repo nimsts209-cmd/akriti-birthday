@@ -158,7 +158,6 @@ lightbox.addEventListener("click",(e)=>{
     }
 
 });
-const originalLetter = letterText.innerHTML;
 
 letterText.innerHTML="";
 
