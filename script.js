@@ -585,97 +585,65 @@ cake.addEventListener("click",()=>{
 });
 function showFinalMessage(){
 
-    const message=document.createElement("div");
+    const message = document.createElement("div");
 
-    message.style.position="fixed";
+    message.style.position = "fixed";
+    message.style.left = "50%";
+    message.style.top = "50%";
+    message.style.transform = "translate(-50%,-50%)";
 
-    message.style.left="50%";
+    message.style.width = "90%";
+    message.style.maxWidth = "600px";
 
-    message.style.top="50%";
+    message.style.padding = "40px";
+    message.style.background = "rgba(255,255,255,0.25)";
+    message.style.backdropFilter = "blur(18px)";
+    message.style.borderRadius = "25px";
+    message.style.color = "white";
+    message.style.textAlign = "center";
+    message.style.zIndex = "999999";
 
-    message.style.transform="translate(-50%,-50%)";
+    message.style.boxShadow = "0 20px 50px rgba(0,0,0,.3)";
 
-    message.style.padding="40px";
+    message.innerHTML = `
+        <div id="closeMessage"
+        style="
+        position:absolute;
+        right:20px;
+        top:15px;
+        cursor:pointer;
+        font-size:30px;">
+        ✖
+        </div>
 
-    message.style.background="rgba(255,255,255,.2)";
+        <h1 style="font-family:'Great Vibes',cursive;font-size:65px;">
+        🌸 Happy Birthday 🌸
+        </h1>
 
-    message.style.backdropFilter="blur(20px)";
+        <h2>Akriti ❤️</h2>
 
-    message.style.borderRadius="25px";
+        <br>
 
-    message.style.color="white";
+        <p style="font-size:20px;line-height:1.8;">
+        Thank you for being such an amazing friend.<br><br>
 
-    message.style.textAlign="center";
+        I hope today brings you as much happiness
+        as you've brought into my life.<br><br>
 
-    message.style.zIndex="999999";
-
-   message.innerHTML = `
-
-<div id="closeMessage">
-
-✖
-
-</div>
-
-<h1 style="font-family:'Great Vibes',cursive;font-size:70px;">
-
-🌸 Happy Birthday 🌸
-
-</h1>
-
-<h2>
-
-Akriti ❤️
-
-</h2>
-
-<br>
-
-<p style="font-size:20px;line-height:2;">
-
-Thank you for being such an amazing friend.
-
-<br><br>
-
-I hope today brings you
-
-as much happiness
-
-as you've brought into my life.
-
-<br><br>
-
-Happy Birthday ❤️
-
-</p>
-
-`;
+        Happy Birthday ❤️
+        </p>
+    `;
 
     document.body.appendChild(message);
-    const closeBtn = document.getElementById("closeMessage");
 
-closeBtn.onclick = () => {
-
-    message.style.opacity = "0";
-
-    message.style.transform = "translate(-50%,-50%) scale(.8)";
-
-    setTimeout(() => {
-
+    document.getElementById("closeMessage").onclick = () => {
         message.remove();
-
-    },400);
-
-};
+    };
 
     launchFireworks();
-
     createConfetti();
-
     heartBurst();
-
-    createPetals();
-
+}
 }
 const observer = new IntersectionObserver(entries=>{
 
