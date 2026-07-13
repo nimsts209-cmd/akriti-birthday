@@ -160,7 +160,6 @@ lightbox.addEventListener("click",(e)=>{
 letterText.innerHTML="";
 
 let letterIndex=0;
-}
 const particles=[];
 
 for(let i=0;i<120;i++){
